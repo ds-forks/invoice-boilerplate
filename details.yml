@@ -1,49 +1,43 @@
 ---
-invoice-nr: 2015-11-04
-author: Max Mustermann
-city: Musterstadt
+invoice-nr: 2018-05-23
+author: Dhilip C
+city: Bangalore
 from:
-- Musterstraße 37
-- 12345 Musterstadt
+- Door Number
+- Street
+- City
 to:
-- Erika Mustermann
-- Musterallee 1
-- 12345 Musterstadt
-- Germany
-VAT: 20
+- Company Name
+- Address
+- City
+# VAT: 20
 service:
-- description: The first service provided
-  price: 320.00
+- description: Wrote Code For
+  price: 2000
   details:
-- description: And another one, with a list of details
-  price: 245.00
-  details:
-    - Some more detailed explanation
-    - of the service provided
-    - Looking good
-- description: The last service provided
-  price: 65.00
+    - "Worked on various feedbacks and fixes"
 
 closingnote: |
-  Please transfer the due amount to the following bank account within the next 14 days:
-   
-    Mustermann GmbH  
-    Kreditinstitut: Deutsche Postbank AG  
-    IBAN: DE18 3601 0043 9999 9999 99  
-    BIC: PBNKDEFF  
+  Please transfer the due amount to the following bank account:
 
-    We really appreciate your business and look forward to future projects together.
+    Account Name: Dhilip C
 
-    Best regards,
+    Account Number: 50100004549866
+
+    Bank Name: HDFC Bank
+
+    Branch: Thippasandra
+
+    IFSC Code: HDFC0000832
 
 # Invoice settings
-currency: EUR
+currency: INR
 # commasep: true
 lang: english
 
 # Typography and layout
-seriffont: Hoefler Text
-sansfont: Helvetica Neue
+seriffont: Source Code Pro for Powerline
+sansfont: Source Code Pro Medium for Powerline
 fontsize: 10pt
 geometry: a4paper, left=43mm, right=43mm, top=51mm, bottom=17mm
 # letterhead: true # To include personalized letterheads
