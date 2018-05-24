@@ -5,32 +5,30 @@ city: Bangalore
 from:
 - Door Number
 - Street
-- City
+- Bangalore
 to:
 - Company Name
-- Company GST Number
-- Address
+- "GST Number: ******"
+- "Door Number"
+- Street
 - City
 # VAT: 20
 service:
-- description: Wrote Code For
-  price: 2000
+- description: Wrote some nice peice of code
+  price: 25000
   details:
     - "Worked on various feedbacks and fixes"
 
-priceinwords: Two thousand rupees only
-closingnote: |
-  Please transfer the due amount to the following bank account:
+priceinwords: Twety five thousand
 
-    Account Name: Dhilip C
-
-    Account Number: 50100004549866
-
-    Bank Name: HDFC Bank
-
-    Branch: Thippasandra
-
-    IFSC Code: HDFC0000832
+bankdetails:
+- "Account Name: Dhilip C"
+- "Account Number: 50100004549866"
+- "Bank Name: HDFC Bank"
+- "Branch Name: Thippasandra"
+- "IFSC Code: HDFC0000832"
+- "PAN: *********"
+- "AADHAR NUMBER: ******"
 
 # Invoice settings
 currency: INR
