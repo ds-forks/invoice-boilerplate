@@ -1,5 +1,5 @@
 ---
-invoice-nr: 2018-05-23
+invoice-nr: "May 2017"
 author: Dhilip C
 city: Bangalore
 from:
@@ -8,6 +8,7 @@ from:
 - City
 to:
 - Company Name
+- Company GST Number
 - Address
 - City
 # VAT: 20
@@ -17,6 +18,7 @@ service:
   details:
     - "Worked on various feedbacks and fixes"
 
+priceinwords: Two thousand rupees only
 closingnote: |
   Please transfer the due amount to the following bank account:
 

@@ -2,9 +2,9 @@ TEX = pandoc
 src = template.tex private.yml
 FLAGS = --pdf-engine=xelatex
 
-output.pdf : $(src)
+dhilipsiva-invoice.pdf : $(src)
 	$(TEX) $(filter-out $<,$^ ) -o $@ --template=$< $(FLAGS)
 
 .PHONY: clean
 clean :
-	rm output.pdf
+	rm dhilipsiva-invoice.pdf

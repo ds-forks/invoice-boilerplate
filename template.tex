@@ -5,7 +5,7 @@
 
 % LAYOUT
 %--------------------------------
-\usepackage{geometry} 
+\usepackage{geometry}
 \geometry{$geometry$}
 
 % No page numbers
@@ -22,7 +22,7 @@ $endif$
 
 % TYPOGRAPHY
 %--------------------------------
-\usepackage{fontspec} 
+\usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{xltxtra}
 
@@ -125,10 +125,10 @@ $if(commasep)$\STsetdecimalsep{,}$endif$ % Use comma as decimal separator
 \begin{spreadtab}{{tabular}[t t t]{lp{8.2cm}r}}
   \hdashline[1pt/1pt]
   @ \noalign{\vskip 2mm} \textbf{Pos.} & @ \textbf{Description} & @ \textbf{Prices in $currency$} \\ \hline
-      $for(service)$ @ \noalign{\vskip 2mm} \refstepcounter{pos} \thepos 
-        & @ $service.description$ 
-        $if(service.details)$\newline \begin{itemize} 
-          $for(service.details)$\scriptsize \item $service.details$ 
+      $for(service)$ @ \noalign{\vskip 2mm} \refstepcounter{pos} \thepos
+        & @ $service.description$
+        $if(service.details)$\newline \begin{itemize}
+          $for(service.details)$\scriptsize \item $service.details$
           $endfor$ \end{itemize}
           $endif$ & $service.price$\\$endfor$ \noalign{\vskip 2mm} \hline
   $if(VAT)$
@@ -138,6 +138,12 @@ $if(commasep)$\STsetdecimalsep{,}$endif$ % Use comma as decimal separator
   @ & @ \multicolumn{1}{r}{\textbf{Total:}}   & \textbf{:={$if(VAT)$[0,-1]+[0,-2]$else$sum(c1:[0,-1])$endif$}} \\ \hhline{~~-}
 \end{spreadtab}
 
+
+\vspace{15mm}
+
+\sffamily
+\small
+$priceinwords$
 
 \vspace{15mm}
 
