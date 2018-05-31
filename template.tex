@@ -1,6 +1,5 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-
 \documentclass[$fontsize$, a4paper]{article}
 
 % LAYOUT
@@ -91,6 +90,7 @@ $endif$
 
 % DOCUMENT
 %--------------------------------
+\graphicspath{ {./} }
 \begin{document}
 \small
 \textsc{\textbf{$author$}}
@@ -138,10 +138,17 @@ $if(commasep)$\STsetdecimalsep{,}$endif$ % Use comma as decimal separator
   @ & @ \multicolumn{1}{r}{\textbf{Total:}}   & \textbf{:={$if(VAT)$[0,-1]+[0,-2]$else$sum(c1:[0,-1])$endif$}} \\ \hhline{~~-}
 \end{spreadtab}
 
-\vspace{15mm}
+\vspace{5mm}
 
 \small
 \textsc{Amount payable in words: \textbf{$priceinwords$} only.}
+
+\vspace{5mm}
+
+\null\hfill \includegraphics[scale=0.25]{signature}
+
+\small
+\null\hfill Authorized Signatory
 
 \vspace{10mm}
 
